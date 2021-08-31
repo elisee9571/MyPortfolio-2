@@ -71,13 +71,46 @@
     user-select: none;
 }
 
+body.stop-scrolling {
+    overflow-y: hidden;
+}
+
 body {
     background: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+    font-size: 18px;
     overflow-x: hidden;
 }
 
-body.stop-scrolling {
-    overflow-y: hidden;
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--background);
+    z-index: 9999;
+}
+
+.preload.fade-out {
+    opacity: 0;
+    transition: all .6s ease-in-out;
+    visibility: hidden;
+}
+
+.preload .number {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: var(--ff-title);
+    color: var(--clr-active);
+}
+
+.section.hide {
+    display: none;
 }
 
 .row {
@@ -105,17 +138,6 @@ body.stop-scrolling {
     display: block;
     font-size: 16px;
     color: var(--foreground);
-}
-
-body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: var(--ff-body);
-    font-size: 18px;
-}
-
-.section.hide {
-    display: none;
 }
 
 
@@ -363,6 +385,20 @@ body {
     background: #99ffa2;
 }
 
+.hero .hero-text p {
+    font-family: var(--ff-title);
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero .hero-text h2,
+h1 {
+    font-family: var(--ff-body);
+    font-size: 25px;
+    font-weight: lighter;
+}
+
 .hero .hero-text,
 .hero .hero-img {
     max-width: 50%;
@@ -425,9 +461,12 @@ body {
 
 .btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin: 60px 0;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: var(--ff-title);
+    text-transform: uppercase;
     color: var(--foreground);
 }
 
@@ -714,6 +753,11 @@ td {
 
 .project-popup .info ul li a {
     color: var(--foreground);
+    transition: all .3s ease;
+}
+
+.project-popup .info ul li a:hover {
+    opacity: .6;
 }
 
 .project-popup .info ul li span {

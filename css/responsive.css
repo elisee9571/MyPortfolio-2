@@ -1,0 +1,42 @@
+@media(max-width: 767px) {
+    .preload .number {
+        left: 50px;
+    }
+    .project-popup .description,
+    .project-popup .info,
+    .about .about-img,
+    .about .about-info,
+    .hero .hero-text,
+    .hero .hero-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .project-items .project-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 574px) {
+    .dark-mode-toggle {
+        border: 2px solid currentColor;
+    }
+    .menu p {
+        right: -50px;
+        font-size: 12px;
+    }
+    .about .btn {
+        font-size: 55px;
+    }
+    .service td {
+        font-size: 30px;
+    }
+    .service .td-number {
+        width: 30%;
+    }
+    .project-items .project-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

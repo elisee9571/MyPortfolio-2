@@ -38,10 +38,18 @@
     <meta name="theme-color" content="#fff">
     <link rel="shortcut icon" href="fav/favicon.ico">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
 </head>
 
 <body>
+    <!-- preload -->
+    <div class="preload">
+        <div class="number"></div>
+    </div>
+    <!-- end preload -->
+
     <!-- nav -->
     <div class="nav">
         <div class="menu-open">
@@ -49,7 +57,7 @@
         </div>
 
         <div class="brand">
-            <span><a href="#home">HNKI</a></span>
+            <span><a href="index.html">HNKI</a></span>
         </div>
 
         <div id="myNav" class="menu">
@@ -200,7 +208,7 @@
                         <p>I am in formation to become a full stack developer.
                         </p>
                         <a href="cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">
-                        _Download CV <i data-feather="file"></i></a>
+                            Download, <br> CV</a>
                         </a>
                     </div>
                 </div>
@@ -294,27 +302,30 @@
 
             <div class="row project-items">
 
-                <div class="project-item" data-category="web-application">
+                <div class="project-item" data-category="photoshop">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-1/thumb/home.jpg" alt="portfolio" data-screenshots="img/project-1/home.jpg">
+                            <img src="img/project-10/thumb/home.png" alt="portfolio" data-screenshots="img/project-10/home-dark.png, 
+                            img/project-10/project-dark.png, img/project-10/menu-dark.png, img/project-10/home-light.png,
+                            img/project-10/project-light.png, img/project-10/menu-light.png">
                             <span class="view-project">view project</span>
                         </div>
-                        <p class="project-item-title">Portfolio /001</p>
+                        <p class="project-item-title">Portfolio /002</p>
 
                         <div class="project-item-details">
                             <div class="row">
                                 <div class="description">
                                     <h3>Description</h3>
-                                    <p>First version of my portfolio</p>
+                                    <p>Second version of my portfolio.</p>
                                 </div>
                                 <div class="info">
                                     <h3>Project info</h3>
                                     <ul>
                                         <li>Date - <span>2021</span></li>
-                                        <li>Tools - <span>html, css</span></li>
-                                        <li>Web - <span><a href="https://elisee9571.github.io/PortfolioV2/" target="_blank" rel="noopener noreferrer">visit site
-                                            <i data-feather="arrow-up-right"></i></a></span></li>
+                                        <li>Tools - <span>photoshop</span></li>
+                                        <li>Web - <span><a href="https://eliseedesmarest.fr/" target="_blank" rel="noopener noreferrer">visit site
+                                            <i data-feather="arrow-up-right"></i></a></span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -325,7 +336,7 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-2/thumb/home.png" alt="portfolio" data-screenshots="img/project-2/home.png">
+                            <img src="img/project-9/thumb/home.png" alt="portfolio" data-screenshots="img/project-9/home.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">HNKI Studio</p>
@@ -354,7 +365,35 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-3/thumb/darkmode.png" alt="portfolio" data-screenshots="img/project-3/darkMode-light.png, img/project-3/darkMode-dark.png">
+                            <img src="img/project-8/thumb/home.jpg" alt="portfolio" data-screenshots="img/project-8/home.jpg">
+                            <span class="view-project">view project</span>
+                        </div>
+                        <p class="project-item-title">Portfolio /001</p>
+
+                        <div class="project-item-details">
+                            <div class="row">
+                                <div class="description">
+                                    <h3>Description</h3>
+                                    <p>First version of my portfolio.</p>
+                                </div>
+                                <div class="info">
+                                    <h3>Project info</h3>
+                                    <ul>
+                                        <li>Date - <span>2021</span></li>
+                                        <li>Tools - <span>html, css</span></li>
+                                        <li>Web - <span><a href="https://elisee9571.github.io/PortfolioV2/" target="_blank" rel="noopener noreferrer">visit site
+                                            <i data-feather="arrow-up-right"></i></a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="web-application">
+                    <div class="project-item-inner">
+                        <div class="project-item-img">
+                            <img src="img/project-7/thumb/darkmode.png" alt="portfolio" data-screenshots="img/project-7/darkMode-light.png, img/project-7/darkMode-dark.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">DarkMode</p>
@@ -382,9 +421,9 @@
                 <div class="project-item" data-category="e-commerce">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-4/thumb/home.png" alt="portfolio" data-screenshots="img/project-4/home.png, img/project-4/menu.png,
-                                img/project-4/shop.png, img/project-4/product.png, img/project-4/cart.png, img/project-4/paiement.png,
-                                img/project-4/about.png, img/project-4/contact.png, img/project-4/profil.png">
+                            <img src="img/project-6/thumb/home.png" alt="portfolio" data-screenshots="img/project-6/home.png, img/project-6/menu.png,
+                                img/project-6/shop.png, img/project-6/product.png, img/project-6/cart.png, img/project-6/paiement.png,
+                                img/project-6/about.png, img/project-6/contact.png, img/project-6/profil.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">2017</p>
@@ -401,8 +440,7 @@
                                         <li>Date - <span>2021</span></li>
                                         <li>Client - <span>2017</span></li>
                                         <li>Tools - <span>vuejs, nodejs, sql</span></li>
-                                        <li>Web - <span><a target="_blank" rel="noopener noreferrer">project in progress
-                                            <i data-feather="arrow-up-right"></i></a></span>
+                                        <li>Web - <span>project in progress...</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -443,7 +481,7 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-6/thumb/form.png" alt="portfolio" data-screenshots="img/project-6/validation.png, img/project-6/erreur.png">
+                            <img src="img/project-4/thumb/form.png" alt="portfolio" data-screenshots="img/project-4/validation.png, img/project-4/erreur.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">Validation form</p>
@@ -472,8 +510,8 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-7/thumb/generatePw.png" alt="portfolio" data-screenshots="img/project-7/pw1.png, img/project-7/pw2.png,
-                            img/project-7/pw3.png, img/project-7/pw4.png">
+                            <img src="img/project-3/thumb/generatePw.png" alt="portfolio" data-screenshots="img/project-3/pw1.png, img/project-3/pw2.png,
+                            img/project-3/pw3.png, img/project-3/pw4.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">Generate password</p>
@@ -502,7 +540,7 @@
                 <div class="project-item" data-category="web-application">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-8/thumb/mdp.png" alt="portfolio" data-screenshots="img/project-8/mdp1.png, img/project-8/mdp2.png">
+                            <img src="img/project-2/thumb/mdp.png" alt="portfolio" data-screenshots="img/project-2/mdp1.png, img/project-2/mdp2.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">Show password</p>
@@ -531,9 +569,9 @@
                 <div class="project-item" data-category="photoshop">
                     <div class="project-item-inner">
                         <div class="project-item-img">
-                            <img src="img/project-9/thumb/home.jfif" alt="portfolio" data-screenshots="img/project-9/home.jfif, img/project-9/shop.png, img/project-9/product.png,
-                            img/project-9/cart.png, img/project-9/profil.jpg, img/project-9/faq.png, img/project-9/contact.png,
-                            img/project-9/login.png">
+                            <img src="img/project-1/thumb/home.jfif" alt="portfolio" data-screenshots="img/project-1/home.jfif, img/project-1/shop.png, img/project-1/product.png,
+                            img/project-1/cart.png, img/project-1/profil.jpg, img/project-1/faq.png, img/project-1/contact.png,
+                            img/project-1/login.png">
                             <span class="view-project">view project</span>
                         </div>
                         <p class="project-item-title">COPX</p>
@@ -566,31 +604,10 @@
         <div class="pp-details">
             <div class="pp-details-inner">
                 <div class="pp-title">
-                    <h2>Portfolio /001</h2>
-                    <p>Category - <span class="pp-project-category">Web Application</span></p>
+                    <h2></h2>
+                    <p>Category - <span class="pp-project-category"></span></p>
                 </div>
                 <div class="pp-project-details">
-                    <div class="row">
-                        <div class="description">
-                            <h3>Project Brief</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ab quod nesciunt perferendis officiis? Culpa fugiat ut aperiam praesentium consequuntur, dolorem, soluta atque cumque hic et nisi at eum ipsa!</p>
-                        </div>
-                        <div class="info">
-                            <h3>Project info</h3>
-                            <ul>
-                                <li>Date - <span>2021</span></li>
-                                <li>Client - <span>Me</span></li>
-                                <li>Tools - <span>html, css, js</span></li>
-                                <li>Web - <span>
-                                    <a class="icon" href="https://eliseedesmarest.fr/" target="_blank" rel="noopener noreferrer">
-                                        visit site
-                                        <i data-feather="arrow-up-right"></i>
-                                    </a>
-                                </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -602,8 +619,8 @@
                 <div class="pp-close">
                     <i data-feather="x"></i>
                 </div>
-                <div class="pp-counter">1/ 6</div>
-                <img class="pp-img" src="img/project-1/thumb/home.jpg" alt="img">
+                <div class="pp-counter"></div>
+                <img class="pp-img" src="" alt="img">
             </div>
 
             <div class="pp-loader">
@@ -635,6 +652,8 @@
     <script src="js/main.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/preload.js"></script>
+
 </body>
 
 </html>
