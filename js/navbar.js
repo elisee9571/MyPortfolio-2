@@ -5,10 +5,12 @@ const navMenu = document.querySelector('.menu');
 
 openNav.addEventListener('click', () => {
     document.getElementById("myNav").style.width = "100%";
+    document.querySelector('.menu').classList.remove('fade-out');
     bodyScrollingToggle();
 });
 closeNav.addEventListener('click', () => {
     document.getElementById("myNav").style.width = "0";
+    document.querySelector('.menu').classList.add('fade-out');
     bodyScrollingToggle();
 });
 

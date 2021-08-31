@@ -21,6 +21,8 @@
 @media(max-width: 574px) {
     .dark-mode-toggle {
         border: 2px solid currentColor;
+        top: 15px;
+        left: 15px;
     }
     .menu p {
         right: -50px;

@@ -183,7 +183,11 @@ body {
     height: 100vh;
     background: var(--background);
     overflow: hidden;
-    transition: all .5s;
+    transition: all .5s ease;
+}
+
+.menu.fade-out {
+    opacity: 0;
 }
 
 .dark-mode-toggle {
