@@ -151,6 +151,10 @@ body {
     border-bottom: 1px solid var(--clr-primary);
 }
 
+.darkmode .nav {
+    mix-blend-mode: difference;
+}
+
 .menu-open {
     position: absolute;
     top: 50%;
