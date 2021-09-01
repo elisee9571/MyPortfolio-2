@@ -471,6 +471,7 @@ h1 {
 
 .btn {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin: 60px 0;
     font-size: 75px;
