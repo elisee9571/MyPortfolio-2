@@ -24,6 +24,14 @@
         top: 15px;
         left: 15px;
     }
+    .menu-open {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: var(--foreground);
+    }
     .menu p {
         right: -50px;
         font-size: 12px;
