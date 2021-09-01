@@ -1,6 +1,6 @@
 @media(max-width: 767px) {
     .preload .number {
-        left: 50px;
+        left: 2rem;
     }
     .project-popup .description,
     .project-popup .info,
@@ -25,12 +25,7 @@
         left: 15px;
     }
     .menu-open {
-        position: absolute;
-        top: 50%;
         left: 1rem;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: var(--foreground);
     }
     .menu p {
         right: -50px;
